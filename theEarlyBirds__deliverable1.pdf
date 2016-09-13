@@ -1,0 +1,14 @@
+The Early Birds Deliverable
+
+Chapter 1
+
+Building Amara Steps:
+1. Install Docker
+2. Install Docker Compose (These two were the hardest part.)
+3. Git clone the repository
+4. Build Amara image (Had to make a new virtual machine of Ubuntu)
+5. Start Amara contains
+6. Configure database
+
+Testing:
+We ran the test suite using bin/dev test which did return a successful test of 965 tests in 1367.838s. We are still unsure how to view the data.
