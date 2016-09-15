@@ -1,0 +1,32 @@
+Attempted to run tests for Amara, errors and warnings popped. 
+The main error was inability to complete the tests.
+Chcked online for solutions. Python was already on version 2.9.12. 
+Celery was installed for tasks imports. http://www.celeryproject.org/
+Trying to use pyOpenSSL by following instructions at the following link:
+https://urllib3.readthedocs.io/en/latest/user-guide.html#ssl-py2
+This stackoverflow subject http://stackoverflow.com/questions/29134512/insecureplatformwarning-a-true-sslcontext-object-is-not-available-this-prevent
+Suggested to get the dependencies 
+$ apt-get install libffi-dev libssl-dev
+
+Once done, urllib3[secure] successfully installed.
+Made urllib3 use pyOpenSSL by importing urllib3.contrib.pyopenssl
+Created a PoolManager that verifies certificate when performing requests by inputting the following lines:
+>>> import certifi
+>>> import urllib3
+>>> http = urllib3.PoolManager(
+...     cert_reqs='CERT_REQUIRED',
+...     ca_certs=certifi.where())
+
+The tests were done succesfully, but warning messages came up.
+InsecurePlatformWarning and SNIMissingWarning.
+
+Test the following five functions:
+Show subtitles on video
+Edit subtitles already on video
+Timestamps for subtitles
+Position of subtitles
+Colour of subtitles
+
+
+Keep in mind:
+Font and size.
