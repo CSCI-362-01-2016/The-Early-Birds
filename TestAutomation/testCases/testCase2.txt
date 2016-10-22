@@ -1,0 +1,6 @@
+01
+setting the width of a line
+Line2D
+line.setColor()
+5
+5

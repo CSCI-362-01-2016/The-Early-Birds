@@ -1,1 +1,6 @@
-
+00
+setting the color of a line
+Line2D
+line.setColor()
+blue
+blue
