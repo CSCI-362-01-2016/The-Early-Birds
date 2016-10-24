@@ -1,0 +1,6 @@
+02
+converting a color to its hex value
+Colors
+colors.to_hex()
+'#ff0000'
+red

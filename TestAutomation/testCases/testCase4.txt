@@ -1,0 +1,6 @@
+03
+converting a color to its RGBA value
+Colors
+colors.to_rgba()
+'(1.0, 0.0, 0.0, 1.0)'
+red

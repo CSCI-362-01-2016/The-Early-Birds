@@ -1,0 +1,6 @@
+08
+Converts days since 0001 to epoch.
+Dates
+Dates.num2epoch(x)
+24264316800.0
+1000000
