@@ -10,11 +10,11 @@ cur_path = os.path.dirname(__file__)
 importListTextFiles = os.listdir('../testCases')
 importList = os.listdir('../testCasesExecutables')
 exportFilePath = os.path.join("../reports/testReport.txt")
-
+oldstdout = sys.stdout
 #print importListTextFiles
 
 #print importList
-
+print "Running tests please wait...\n"
 importListTextFiles.sort()
 importList.sort()
 
@@ -63,5 +63,9 @@ for i in range(0,len(importList)):
 #os.system("python ../testCasesExecutables/test_line_color.py 3 5")
 
 #print sys.exc_info()
+sys.stdout = oldstdout
+
+print "Tests complete."
+
 output.close()
 
