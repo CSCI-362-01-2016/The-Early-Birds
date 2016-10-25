@@ -1,4 +1,4 @@
-17
+18
 converting a color to its hex value
 Colors
 colors.to_hex()

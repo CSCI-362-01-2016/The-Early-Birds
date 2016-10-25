@@ -1,0 +1,6 @@
+22
+Converting a hex string to its RGB value
+Colors
+colors.hex2colors(s)
+'(0.0, 1.0, 0.0)'
+'#00ff00'
