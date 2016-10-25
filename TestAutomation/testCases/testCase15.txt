@@ -1,0 +1,6 @@
+14
+setting the edge width of a line
+Line2D
+line.markeredgewidth(ew)
+25
+25

@@ -1,0 +1,6 @@
+11
+getting the width of a line
+Line2D
+line.get_linewidth()
+100
+100

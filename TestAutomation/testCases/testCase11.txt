@@ -1,0 +1,6 @@
+10
+getting the color of a line
+Line2D
+line.getColor()
+yellow
+yellow

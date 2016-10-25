@@ -1,0 +1,6 @@
+15
+copying properties from one line to another
+Line2D
+line.set_markersize(sz)
+2000
+2000

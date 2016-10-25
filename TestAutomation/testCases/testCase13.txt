@@ -1,0 +1,6 @@
+12
+setting the style of a line
+Line2D
+line.set_linestyle(ls)
+:
+:
