@@ -1,0 +1,6 @@
+16
+setting the edge color of a line
+Line2D
+line.set_markeredgecolor(ec)
+'#ffffff'
+'#ffffff'
