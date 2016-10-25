@@ -9,7 +9,7 @@ cur_path = os.path.dirname(__file__)
 
 importListTextFiles = os.listdir('../testCases')
 importList = os.listdir('../testCasesExecutables')
-exportFilePath = os.path.join("../myReports/testReport.txt")
+exportFilePath = os.path.join("../reports/testReport.txt")
 
 #print importListTextFiles
 
