@@ -1,4 +1,4 @@
-s np
+import numpy as np
 import matplotlib.colors as colors
 import unittest
 import sys
