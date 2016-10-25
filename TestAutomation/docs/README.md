@@ -33,4 +33,9 @@ While the testing will be done in the Ubuntu 16.04 LTS operating system, any sys
     
 
 
-To install Matplotlib run: "sudo apt-get install python-matplotlib"
+To install Matplotlib download a zip of it from https://github.com/matplotlib/matplotlib
+
+To get the dependencies necessary for Matplotlib run:
+(these can be figured out when running "sudo python setup.py build" in the Matplotlib directory)
+1. "sudo apt-get install libfreetype6-dev"
+2.
