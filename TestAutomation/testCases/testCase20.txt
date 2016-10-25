@@ -1,0 +1,6 @@
+19
+converting a color to its hex value
+Colors
+colors.to_hex()
+'#a52a2a'
+brown
