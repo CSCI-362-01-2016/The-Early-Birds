@@ -16,6 +16,6 @@ if __name__=='__main__':
     #import sys
 	
     if len(sys.argv) > 1:
-    TestColorMethods.color = sys.argv.pop()
-    TestColorMethods.expectedRGBA = sys.argv.pop()
+    	TestColorMethods.color = sys.argv.pop()
+    	TestColorMethods.expectedRGBA = sys.argv.pop()
     unittest.main()
