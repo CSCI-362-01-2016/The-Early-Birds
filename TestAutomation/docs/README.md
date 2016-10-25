@@ -32,6 +32,5 @@ While the testing will be done in the Ubuntu 16.04 LTS operating system, any sys
     Composable cycle class used for constructin style-cycles.
     
 
-To get all the dependencies for Matplotlib run: "sudo apt-get build-dep python-matplotlib" for Debian/Ubuntu
 
 To install Matplotlib run: "sudo apt-get install python-matplotlib"
