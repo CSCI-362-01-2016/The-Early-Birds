@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import os
 import sys
 import subprocess
@@ -7,9 +9,9 @@ import commands
 #sys.path.append(os.path.join(os.path.dirname(__file__), "../testCasesExecutables"))
 cur_path = os.path.dirname(__file__)
 
-importListTextFiles = os.listdir('../testCases')
-importList = os.listdir('../testCasesExecutables')
-exportFilePath = os.path.join("../reports/testReport.txt")
+importListTextFiles = os.listdir('testCases')
+importList = os.listdir('testCasesExecutables')
+exportFilePath = os.path.join("reports/testReport.txt")
 oldstdout = sys.stdout
 #print importListTextFiles
 
@@ -28,7 +30,7 @@ sys.stdout = output
 
 
 for i in range(0,len(importList)):
-	new_path = os.path.relpath('../testCases/'+importListTextFiles[i], cur_path)
+	new_path = ('testCases/'+importListTextFiles[i])
 	#tempPath = '../testCasesExecutables/'+importListTextFiles[i]
 	f = open(new_path,'r')
 	#lineList = list()
@@ -42,7 +44,7 @@ for i in range(0,len(importList)):
 		
 	#print "blue\n 5"
 	#print lineList[5]+" "+str(len(lineList[5]))
-	tempString = "python ../testCasesExecutables/"+importList[i]+" "+lineList[4]+" "+lineList[5]
+	tempString = "python testCasesExecutables/"+importList[i]+" "+lineList[4]+" "+lineList[5]
 	
 
 	print tempString + "\n"	
@@ -68,4 +70,3 @@ sys.stdout = oldstdout
 print "Tests complete."
 
 output.close()
-
