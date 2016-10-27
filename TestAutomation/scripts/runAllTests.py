@@ -70,3 +70,4 @@ sys.stdout = oldstdout
 print "Tests complete."
 
 output.close()
+
