@@ -28,7 +28,6 @@ output = open(exportFilePath, 'w')
 sys.stdout = output
 
 
-
 for i in range(0,len(importList)):
 	new_path = ('testCases/'+importListTextFiles[i])
 	#tempPath = '../testCasesExecutables/'+importListTextFiles[i]
@@ -44,7 +43,9 @@ for i in range(0,len(importList)):
 		
 	#print "blue\n 5"
 	#print lineList[5]+" "+str(len(lineList[5]))
-	tempString = "python testCasesExecutables/"+importList[i]+" "+lineList[4]+" "+lineList[5]
+
+
+	tempString = "python testCasesExecutables/"+lineList[6]+" "+lineList[4]+" "+lineList[5]
 	
 
 	print tempString + "\n"	
