@@ -45,7 +45,7 @@ for i in range(0,len(importList)):
 	#print lineList[5]+" "+str(len(lineList[5]))
 
 
-	tempString = "python testCasesExecutables/"+lineList[6]+" "+lineList[4]+" "+lineList[5]
+	tempString = "python testCasesExecutables/"+lineList[2]+" "+lineList[4]+" "+lineList[5]
 	
 
 	print tempString + "\n"	
@@ -71,4 +71,3 @@ sys.stdout = oldstdout
 print "Tests complete."
 
 output.close()
-
