@@ -1,6 +1,6 @@
-01
+02
 setting the width of a line
-Line2D
+testCaseExecutable2.py
 line.setWidth()
 5
 5
