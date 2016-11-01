@@ -1,6 +1,6 @@
-15
+16
 copying properties from one line to another
-Line2D
+testCaseExecutable16.py
 line.set_markersize(sz)
 2000
 2000
