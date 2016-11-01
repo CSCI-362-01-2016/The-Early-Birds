@@ -1,6 +1,6 @@
-10
+11
 getting the color of a line
-Line2D
+testCaseExecutable11.py
 line.getColor()
 yellow
 yellow
