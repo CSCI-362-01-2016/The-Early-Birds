@@ -1,6 +1,6 @@
-14
+15
 setting the edge width of a line
-Line2D
+testCaseExecutable15.py
 line.markeredgewidth(ew)
 25
 25
