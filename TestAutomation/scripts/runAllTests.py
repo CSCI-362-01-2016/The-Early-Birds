@@ -95,8 +95,6 @@ print "Tests complete."
 
 output.close()
 
-for i in range(0,len(htmlArrayData)):
-	print htmlArrayData[i][6]
 
 
 open(htmlFilePath, 'w').close()
