@@ -4,6 +4,7 @@ import os
 import sys
 import subprocess
 import commands
+import webbrowser
 
 #sys.path.append(os.path.join(os.path.dirname(__file__), "../scripts"))
 #sys.path.append(os.path.join(os.path.dirname(__file__), "../testCasesExecutables"))
@@ -12,6 +13,7 @@ cur_path = os.path.dirname(__file__)
 importListTextFiles = os.listdir('testCases')
 importList = os.listdir('testCasesExecutables')
 exportFilePath = os.path.join("reports/testReport.txt")
+htmlFilePath = os.path.join("reports/testReport.html")
 oldstdout = sys.stdout
 #print importListTextFiles
 
@@ -21,6 +23,13 @@ importListTextFiles.sort()
 importList.sort()
 
 #print importList
+
+new = 2
+htmlArrayData = []
+htmlSingleData = []
+passed_failed = "Failed"
+
+
 
 open(exportFilePath, 'w').close()
 
@@ -60,6 +69,20 @@ for i in range(0,len(importList)):
 	stringOutput = cmdoutput[1].replace("\n", " ")
 	#stringOutput = cmdoutput
 	print stringOutput
+
+	if stringOutput.endswith("OK") == True:
+		passed = "Passed"
+
+	htmlSingleData.append(lineList[0])
+	htmlSingleData.append(lineList[1])
+	htmlSingleData.append(lineList[2])
+	htmlSingleData.append(lineList[3])
+	htmlSingleData.append(lineList[4])
+	htmlSingleData.append(lineList[5])
+	htmlSingleData.append(passed)
+	htmlArrayData.append(htmlSingleData)
+	htmlSingleData = []
+	passed = "Failed"
 	
 
 #os.system("python ../testCasesExecutables/testCaseExecutable1.py blue blue")
@@ -71,3 +94,34 @@ sys.stdout = oldstdout
 print "Tests complete."
 
 output.close()
+
+for i in range(0,len(htmlArrayData)):
+	print htmlArrayData[i][6]
+
+
+open(htmlFilePath, 'w').close()
+
+output = open(htmlFilePath, 'w')
+sys.stdout = output
+
+print """<html><head></head><body><table border="1">
+<th>Test Case</th><th>Description</th><th>File</th><th>Method</th><th>Expected Output</th><th>Input</th><th>Result</th>"""
+
+for i in range(0,len(htmlArrayData)):
+	print "<tr>"
+	for j in range (0,len(htmlArrayData[i])):
+		print "<td>"
+		print htmlArrayData[i][j]
+		print "</td>"
+	
+	print "</tr>"
+
+
+print "</table></body></html>"
+
+
+output.close()
+
+url = htmlFilePath
+webbrowser.open(url,new=new)
+
