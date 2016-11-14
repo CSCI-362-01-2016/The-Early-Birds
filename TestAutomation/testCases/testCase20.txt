@@ -1,4 +1,4 @@
-19
+20
 Converting a color to its hex value
 testCaseExecutable19.py
 colors.to_hex()
