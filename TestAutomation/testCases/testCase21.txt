@@ -1,6 +1,6 @@
-20
-getting the color of a line
-Line2D
+21
+Getting the color of a line
+testCaseExecutable21.py
 line.getColor()
 red
 red

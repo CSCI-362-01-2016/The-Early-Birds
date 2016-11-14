@@ -1,6 +1,6 @@
-16
+17
 setting the edge color of a line
-Line2D
+testCaseExecutable17.py
 line.set_markeredgecolor(ec)
 '#ffffff'
 '#ffffff'

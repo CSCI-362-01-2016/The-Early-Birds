@@ -1,6 +1,6 @@
-22
+23
 Converting a hex string to its RGB value
-Colors
-colors.hex2colors(s)
+testCaseExecutable23.py
+colors.hex2colors(hex)
 '(0.0, 1.0, 0.0)'
 '#00ff00'
