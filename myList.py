@@ -1,4 +1,4 @@
-// Little script to list the top-level directory contents of its containing directory in an html file displayed in a browser.
+# Little script to list the top-level directory contents of its containing directory in an html file displayed in a browser.
 
 import os
 import webbrowser
