@@ -116,10 +116,7 @@ for i in range(0,len(htmlArrayData)):
 			print """<td bgcolor="#00ff00">"""
 			print htmlArrayData[i][j]
 			print "</td>"
-		else:
-			print "<td>"
-			print htmlArrayData[i][j]
-			print "</td>"
+		
 	
 	print "</tr>"
 
