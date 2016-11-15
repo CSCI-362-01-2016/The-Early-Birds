@@ -1,6 +1,0 @@
-14
-converting weeks to days
-testCaseExecutable14.py
-matplotlib.dates.weeks(w)
-70
-10
