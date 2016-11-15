@@ -1,6 +1,6 @@
 15
-setting the edge width of a line
+converting seconds to days
 testCaseExecutable15.py
-line.markeredgewidth(ew)
-25
-25
+matplotlib.dates.seconds(s)
+3
+259200

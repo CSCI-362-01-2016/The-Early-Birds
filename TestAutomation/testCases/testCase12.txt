@@ -1,6 +1,6 @@
 12
-getting the width of a line
+converting seconds to days
 testCaseExecutable12.py
-line.get_linewidth()
-100
-100
+matplotlib.dates.seconds(s)
+0.5
+43200

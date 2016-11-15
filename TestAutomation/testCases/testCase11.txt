@@ -1,6 +1,6 @@
 11
-getting the color of a line
+converting seconds to days
 testCaseExecutable11.py
-line.getColor()
-yellow
-yellow
+matplotlib.dates.seconds(s)
+1.0
+86400

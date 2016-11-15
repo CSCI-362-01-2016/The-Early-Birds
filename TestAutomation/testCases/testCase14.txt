@@ -1,6 +1,6 @@
 14
-setting the edge color of a line
+converting seconds to days
 testCaseExecutable14.py
-line.set_markeredgecolor(ec)
-'#ff7f0e'
-'#ff7f0e'
+matplotlib.dates.seconds(s)
+-0.05
+-4320
