@@ -9,7 +9,7 @@ import matplotlib
 
 class TestLineMethods(unittest.TestCase):
 	
-	seconds = None
+	weeks = None
 	expected_days = None
 	
 	def setUp(self):
@@ -19,7 +19,7 @@ class TestLineMethods(unittest.TestCase):
 	def test_matplotlib_dates_seconds(self):
 		
 		
-		self.assertEqual(float(self.expected_days),float(matplotlib.dates.seconds(self.seconds)))
+		self.assertEqual(float(self.expected_days),float(matplotlib.dates.weeks(self.weeks)))
 
 	"""def test_line_width(self):
 		#line, = plt.plot([1,2,3,4])
@@ -33,7 +33,7 @@ if __name__=='__main__':
 	#import sys
 	
 	if len(sys.argv) > 1:
-        	TestLineMethods.seconds = sys.argv.pop()
+        	TestLineMethods.weeks = sys.argv.pop()
 		TestLineMethods.expected_days = sys.argv.pop()
         	#TestLineMethods.width = sys.argv.pop()
 	unittest.main()
