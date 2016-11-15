@@ -1,0 +1,6 @@
+07
+Gives number of days after 0001-01-01 00:00:00 UTC plus one.
+testCaseExecutable7.py
+dates.num2date(num)
+'0002-05-15 00:00:00+00:00'
+500

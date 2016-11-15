@@ -1,0 +1,6 @@
+03
+converting a color to its hex value
+testCaseExecutable2.py
+colors.to_hex(color)
+'#ff0000'
+red

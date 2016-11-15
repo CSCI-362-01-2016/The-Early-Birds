@@ -1,0 +1,6 @@
+04
+Converting a color to its RGBA value
+testCaseExecutable4.py
+colors.to_rgba(color)
+'(1.0, 0.0, 0.0, 1.0)'
+red
