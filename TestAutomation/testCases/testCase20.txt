@@ -1,6 +1,6 @@
 20
-Converting a color to its hex value
-testCaseExecutable19.py
-colors.to_hex()
-'#a52a2a'
-brown
+Returns hours as days as a float number.
+testCaseExecutable20.py
+dates.hours(h)
+365.0
+8760

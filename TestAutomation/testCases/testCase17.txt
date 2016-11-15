@@ -1,6 +1,6 @@
 17
-setting the edge color of a line
+Returns seconds as days as a float number.
 testCaseExecutable17.py
-line.set_markeredgecolor(ec)
-'#ffffff'
-'#ffffff'
+dates.seconds(s)
+1.0
+86400
