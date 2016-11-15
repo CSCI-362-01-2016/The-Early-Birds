@@ -1,6 +1,6 @@
 14
-converting seconds to days
+converting weeks to days
 testCaseExecutable14.py
-matplotlib.dates.seconds(s)
--0.05
--4320
+matplotlib.dates.weeks(w)
+70
+10
