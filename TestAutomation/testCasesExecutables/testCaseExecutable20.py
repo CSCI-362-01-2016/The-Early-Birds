@@ -1,22 +1,22 @@
 import numpy as np
-import matplotlib.colors as colors
+import matplotlib.dates as dates
 import unittest
 import sys
 
-class TestColorMethods(unittest.TestCase):
-    color = None
-    expectedHex = None
+class TestDatesMethods(unittest.TestCase):
+    hours = None
+    expectedDays = None
 	
-    def test_to_hex(self):
+    def test_hours(self):	
 				
-        self.assertEqual(colors.to_hex(self.color), self.expectedHex)
+        self.assertEqual(dates.hours(int(self.hours)), float(self.expectedDays))
 		
 
 if __name__=='__main__':
     #import sys
 	
     if len(sys.argv) > 1:
-        TestColorMethods.color = sys.argv.pop()
-        TestColorMethods.expectedHex = sys.argv.pop()
+        TestDatesMethods.hours = sys.argv.pop()
+        TestDatesMethods.expectedDays = sys.argv.pop()
         	
     unittest.main()
