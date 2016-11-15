@@ -3,4 +3,4 @@ converting seconds to days
 testCaseExecutable14.py
 matplotlib.dates.seconds(s)
 7
-10080
+604800
