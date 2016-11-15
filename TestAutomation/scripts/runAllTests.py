@@ -116,7 +116,7 @@ for i in range(0,len(htmlArrayData)):
 			print """<td bgcolor="#00ff00">"""
 			print htmlArrayData[i][j]
 			print "</td>"
-		if htmlArrayData[i][j] != "Passed" && htmlArrayData[i][j] != "Failed":
+		if htmlArrayData[i][j] != "Passed" and htmlArrayData[i][j] != "Failed":
 			print "<td>"
 			print htmlArrayData[i][j]
 			print "</td>"
