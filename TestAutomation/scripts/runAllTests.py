@@ -103,7 +103,7 @@ output = open(htmlFilePath, 'w')
 sys.stdout = output
 
 print """<html><head></head><body><table border="1">
-<th>Test Case</th><th>Description</th><th>File</th><th>Method</th><th>Expected Output</th><th>Input</th><th>Result</th>"""
+<th>Test Case ID</th><th>Requirements</th><th>File</th><th>Method</th><th>Expected Output</th><th>Input</th><th>Result</th>"""
 
 for i in range(0,len(htmlArrayData)):
 	print "<tr>"
