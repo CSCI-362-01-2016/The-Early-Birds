@@ -108,9 +108,18 @@ print """<html><head></head><body><table border="1">
 for i in range(0,len(htmlArrayData)):
 	print "<tr>"
 	for j in range (0,len(htmlArrayData[i])):
-		print "<td>"
-		print htmlArrayData[i][j]
-		print "</td>"
+		if htmlArrayData[i][j] == "Failed":
+			print """<td bgcolor="#ff0000">"""
+			print htmlArrayData[i][j]
+			print "</td>"
+		if htmlArrayData[i][j] == "Passed":
+			print """<td bgcolor="#00ff00">"""
+			print htmlArrayData[i][j]
+			print "</td>"
+		else:
+			print "<td>"
+			print htmlArrayData[i][j]
+			print "</td>"
 	
 	print "</tr>"
 
