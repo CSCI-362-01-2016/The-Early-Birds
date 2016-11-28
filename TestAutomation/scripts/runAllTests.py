@@ -103,22 +103,30 @@ output = open(htmlFilePath, 'w')
 sys.stdout = output
 
 print """<html><head></head><body><table border="1">
-<th>Test Case ID</th><th>Requirements</th><th>File</th><th>Method</th><th>Expected Output</th><th>Input</th><th>Result</th>"""
+<th>Test Case</th><th>Description</th><th>Component</th><th>Method</th><th>Input</th><th>Expected Output</th><th>Result</th>"""
+
+dataVar = 0
 
 for i in range(0,len(htmlArrayData)):
 	print "<tr>"
 	for j in range (0,len(htmlArrayData[i])):
-		if htmlArrayData[i][j] == "Failed":
+		if j == 4:
+			dataVar = 5
+		elif j == 5:
+			dataVar = 4
+		else:
+			dataVar = j
+		if htmlArrayData[i][dataVar] == "Failed":
 			print """<td bgcolor="#ff0000">"""
-			print htmlArrayData[i][j]
+			print htmlArrayData[i][dataVar]
 			print "</td>"
-		if htmlArrayData[i][j] == "Passed":
+		if htmlArrayData[i][dataVar] == "Passed":
 			print """<td bgcolor="#00ff00">"""
-			print htmlArrayData[i][j]
+			print htmlArrayData[i][dataVar]
 			print "</td>"
-		if htmlArrayData[i][j] != "Passed" and htmlArrayData[i][j] != "Failed":
+		if htmlArrayData[i][dataVar] != "Passed" and htmlArrayData[i][dataVar] != "Failed":
 			print "<td>"
-			print htmlArrayData[i][j]
+			print htmlArrayData[i][dataVar]
 			print "</td>"
 		
 	
@@ -132,4 +140,3 @@ output.close()
 
 url = htmlFilePath
 webbrowser.open(url,new=new)
-
