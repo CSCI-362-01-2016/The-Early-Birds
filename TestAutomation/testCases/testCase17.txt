@@ -1,6 +1,6 @@
 17
 Returns seconds as days as a float number.
-testCaseExecutable17.py
+Dates
 dates.seconds(s)
 1.0
 86400
