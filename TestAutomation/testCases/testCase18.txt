@@ -1,6 +1,6 @@
 18
 Converting a color to its hex value
-testCaseExecutable18.py
+Colors
 colors.to_hex()
 '#6495ed'
 cornflowerblue
