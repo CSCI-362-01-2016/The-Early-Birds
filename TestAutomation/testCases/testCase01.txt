@@ -1,6 +1,6 @@
 01
 setting the color of a Line2D
-testCaseExecutable1.py
+Line
 line.setColor()
 blue
 blue
