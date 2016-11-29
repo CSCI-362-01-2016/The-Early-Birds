@@ -1,6 +1,6 @@
 16
 copying properties from one line to another
-testCaseExecutable16.py
+Line
 line.set_markersize(sz)
 2000
 2000
