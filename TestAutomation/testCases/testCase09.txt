@@ -1,6 +1,6 @@
 09
 Converts days since 0001 to epoch.
-testCaseExecutable9.py
+Dates
 Dates.num2epoch(num)
 24264316800.0
 1000000
