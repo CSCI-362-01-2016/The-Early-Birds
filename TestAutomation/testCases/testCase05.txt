@@ -1,6 +1,7 @@
 05
 Converting a hex string to its RGB value
-Colors
+testCaseExecutable5.py
 colors.hex2colors(hex)
 '(1.0, 0.0, 0.0)'
 '#ff0000'
+Colors
