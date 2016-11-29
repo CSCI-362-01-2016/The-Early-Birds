@@ -80,6 +80,7 @@ for i in range(0,len(importList)):
 	htmlSingleData.append(lineList[4])
 	htmlSingleData.append(lineList[5])
 	htmlSingleData.append(passed)
+	htmlSingleData.append(lineList[6])
 	htmlArrayData.append(htmlSingleData)
 	htmlSingleData = []
 	passed = "Failed"
@@ -109,11 +110,13 @@ dataVar = 0
 
 for i in range(0,len(htmlArrayData)):
 	print "<tr>"
-	for j in range (0,len(htmlArrayData[i])):
+	for j in range (0,len(htmlArrayData[i])-1):
 		if j == 4:
 			dataVar = 5
 		elif j == 5:
 			dataVar = 4
+		elif j == 2:
+			dataVar = 7
 		else:
 			dataVar = j
 		if htmlArrayData[i][dataVar] == "Failed":
@@ -140,3 +143,4 @@ output.close()
 
 url = htmlFilePath
 webbrowser.open(url,new=new)
+
