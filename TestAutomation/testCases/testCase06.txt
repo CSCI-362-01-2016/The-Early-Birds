@@ -1,6 +1,6 @@
 06
 Checks if c can be converted to RGB
-testCaseExecutable6.py
+Colors
 colors.is_color_like(color)
 True
 red
