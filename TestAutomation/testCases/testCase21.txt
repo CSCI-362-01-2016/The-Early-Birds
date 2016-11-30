@@ -1,7 +1,7 @@
 21
 Getting the color of a line
-testCaseExecutable21.py
+Line
 line.getColor()
 red
 red
-Line
+testCaseExecutable21.py

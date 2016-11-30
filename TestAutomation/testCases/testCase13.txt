@@ -1,7 +1,7 @@
 13
 converting seconds to days
-testCaseExecutable13.py
+Seconds
 matplotlib.dates.seconds(s)
 -0.05
 -4320
-Seconds
+testCaseExecutable13.py

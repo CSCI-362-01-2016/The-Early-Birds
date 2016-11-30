@@ -1,7 +1,7 @@
 03
 converting a color to its hex value
-testCaseExecutable3.py
+Colors
 colors.to_hex(color)
 '#ff0000'
 red
-Colors
+testCaseExecutable3.py

@@ -1,7 +1,7 @@
 20
 Returns hours as days as a float number.
-testCaseExecutable20.py
+Dates
 dates.hours(h)
 365.0
 8760
-Dates
+testCaseExecutable20.py
