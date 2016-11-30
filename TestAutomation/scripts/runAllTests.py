@@ -54,7 +54,7 @@ for i in range(0,len(importList)):
 	#print lineList[5]+" "+str(len(lineList[5]))
 
 
-	tempString = "python testCasesExecutables/"+lineList[2]+" "+lineList[4]+" "+lineList[5]
+	tempString = "python testCasesExecutables/"+lineList[6]+" "+lineList[4]+" "+lineList[5]
 	
 
 	print tempString + "\n"	
@@ -80,10 +80,12 @@ for i in range(0,len(importList)):
 	htmlSingleData.append(lineList[4])
 	htmlSingleData.append(lineList[5])
 	htmlSingleData.append(passed)
-	htmlSingleData.append(lineList[6])
 	htmlArrayData.append(htmlSingleData)
+	
 	htmlSingleData = []
 	passed = "Failed"
+		
+	
 	
 
 #os.system("python ../testCasesExecutables/testCaseExecutable1.py blue blue")
@@ -95,6 +97,7 @@ sys.stdout = oldstdout
 print "Tests complete."
 
 output.close()
+
 
 
 
@@ -110,26 +113,19 @@ dataVar = 0
 
 for i in range(0,len(htmlArrayData)):
 	print "<tr>"
-	for j in range (0,len(htmlArrayData[i])-1):
-		if j == 4:
-			dataVar = 5
-		elif j == 5:
-			dataVar = 4
-		elif j == 2:
-			dataVar = 7
-		else:
-			dataVar = j
-		if htmlArrayData[i][dataVar] == "Failed":
+	for j in range (0,len(htmlArrayData[i])):
+		
+		if htmlArrayData[i][j] == "Failed":
 			print """<td bgcolor="#ff0000">"""
-			print htmlArrayData[i][dataVar]
+			print htmlArrayData[i][j]
 			print "</td>"
-		if htmlArrayData[i][dataVar] == "Passed":
+		if htmlArrayData[i][j] == "Passed":
 			print """<td bgcolor="#00ff00">"""
-			print htmlArrayData[i][dataVar]
+			print htmlArrayData[i][j]
 			print "</td>"
-		if htmlArrayData[i][dataVar] != "Passed" and htmlArrayData[i][dataVar] != "Failed":
+		if htmlArrayData[i][j] != "Passed" and htmlArrayData[i][dataVar] != "Failed":
 			print "<td>"
-			print htmlArrayData[i][dataVar]
+			print htmlArrayData[i][j]
 			print "</td>"
 		
 	
