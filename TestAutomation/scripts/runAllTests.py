@@ -119,11 +119,12 @@ for i in range(0,len(htmlArrayData)):
 			print """<td bgcolor="#ff0000">"""
 			print htmlArrayData[i][j]
 			print "</td>"
-		if htmlArrayData[i][j] == "Passed":
+		elif htmlArrayData[i][j] == "Passed":
 			print """<td bgcolor="#00ff00">"""
 			print htmlArrayData[i][j]
 			print "</td>"
-		if htmlArrayData[i][j] != "Passed" and htmlArrayData[i][dataVar] != "Failed":
+		#if htmlArrayData[i][j] != "Passed" and htmlArrayData[i][dataVar] != "Failed":	
+		else:
 			print "<td>"
 			print htmlArrayData[i][j]
 			print "</td>"
