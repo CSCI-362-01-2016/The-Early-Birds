@@ -27,7 +27,7 @@ importList.sort()
 new = 2
 htmlArrayData = []
 htmlSingleData = []
-passed_failed = "Failed"
+passed = "Failed"
 
 
 
