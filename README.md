@@ -36,4 +36,12 @@ While the testing will be done in the Ubuntu 16.04 LTS operating system, any sys
 
 To install Matplotlib run: "sudo apt-get install python-matplotlib"
 
-In order to make the runAllTests.py an executable file, please run "chmod +x runAllTests.py" in the scripts folder. This will allow the command ./scripts/runAllTests.py to work from the root folder.
+Next download a zip of it from https://github.com/matplotlib/matplotlib
+
+Then extract it and inside run "sudo python setup.py build"
+
+This will alert you if you are missing any dependencies. If not it will build just fine.
+
+Then run "sudo python setup.py install"
+
+**In order to make the runAllTests.py an executable file, please run "chmod +x runAllTests.py" in the scripts folder. This will allow the command ./scripts/runAllTests.py to work from the root folder.**
