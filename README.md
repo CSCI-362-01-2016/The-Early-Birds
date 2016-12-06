@@ -35,3 +35,5 @@ While the testing will be done in the Ubuntu 16.04 LTS operating system, any sys
 
 
 To install Matplotlib run: "sudo apt-get install python-matplotlib"
+
+In order to make the runAllTests.py an executable file, please run "chmod +x runAllTests.py" in the scripts folder. This will allow the command ./scripts/runAllTests.py to work from the root folder.
