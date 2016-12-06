@@ -33,7 +33,9 @@ While the testing will be done in the Ubuntu 16.04 LTS operating system, any sys
     
 
 
-To install Matplotlib download a zip of it from https://github.com/matplotlib/matplotlib
+To install Matplotlib run: "sudo apt-get install python-matplotlib"
+
+Next download a zip of it from https://github.com/matplotlib/matplotlib
 
 Then extract it and inside run "sudo python setup.py build"
 
